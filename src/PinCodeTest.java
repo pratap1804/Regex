@@ -7,4 +7,10 @@ class PinCodeTest {
 		PinCode myPinCode = new PinCode(484555);
 		myPinCode.checkPincodeNumbers();
 	}
+	
+	@Test
+	void givenPincodeShouldNotPassTestIfHavingAlphabetsAtStarting() {
+	PinCode myPinCode = new PinCode(484555);
+	myPinCode.checkPinCodeNotHavingAlphabetsInTheBeginning();
+	}
 }

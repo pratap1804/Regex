@@ -6,5 +6,9 @@ public class FunctionsImpl implements Functions{
 	public void checkPincodeNumbers() {
 		Pattern.compile("[0-9]{6}");
 	}
+	
+	public void checkPinCodeNotHavingAlphabetsInTheBeginning() {
+		Pattern.compile("^[0-9]{6}");		
+	}
 
 }
