@@ -10,5 +10,9 @@ public class FunctionsImpl implements Functions{
 	public void checkPinCodeNotHavingAlphabetsInTheBeginning() {
 		Pattern.compile("^[0-9]{6}");		
 	}
-
+	
+	
+	public void checkPinCodeNotHavingAlphabetsInTheEnd() {
+		Pattern.compile("^[0-9]{6}$");		
+	}
 }

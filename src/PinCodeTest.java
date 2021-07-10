@@ -13,4 +13,10 @@ class PinCodeTest {
 	PinCode myPinCode = new PinCode(484555);
 	myPinCode.checkPinCodeNotHavingAlphabetsInTheBeginning();
 	}
+	
+	@Test
+	void givenPincodeShouldNotPassTheTestIfHavingAlphabetAtTheEnd() {
+		PinCode myPinCode = new PinCode(484555);
+		myPinCode.checkPinCodeNotHavingAlphabetsInTheEnd();
+	}
 }
