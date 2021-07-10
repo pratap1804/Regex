@@ -19,4 +19,10 @@ class PinCodeTest {
 		PinCode myPinCode = new PinCode(484555);
 		myPinCode.checkPinCodeNotHavingAlphabetsInTheEnd();
 	}
+	
+	@Test
+	void givenPincodeShouldAlsoPassTheTestIfHavingSpaceInBetween() {
+		Functions myPinCode = new FunctionsImpl();
+		myPinCode.checkPinCodeHavingSpaceInBetween("484 555");
+	}
 }

@@ -15,4 +15,8 @@ public class FunctionsImpl implements Functions{
 	public void checkPinCodeNotHavingAlphabetsInTheEnd() {
 		Pattern.compile("^[0-9]{6}$");		
 	}
+	
+	public void checkPinCodeHavingSpaceInBetween(String string) {
+		Pattern.compile("^[0-9]{3}[: :] [0-9]{3}$");
+	}
 }
