@@ -3,20 +3,7 @@ import java.util.regex.Pattern;
 public class FunctionsImpl implements Functions{
 
 	@Override
-	public void checkPincodeNumbers() {
-		Pattern.compile("[0-9]{6}");
-	}
-	
-	public void checkPinCodeNotHavingAlphabetsInTheBeginning() {
-		Pattern.compile("^[0-9]{6}");		
-	}
-	
-	
-	public void checkPinCodeNotHavingAlphabetsInTheEnd() {
-		Pattern.compile("^[0-9]{6}$");		
-	}
-	
-	public void checkPinCodeHavingSpaceInBetween(String string) {
-		Pattern.compile("^[0-9]{3}[: :] [0-9]{3}$");
+	public void checkEmailFirstMandatoryPart() {
+		Pattern.compile("^[a-z A-z]{3}");
 	}
 }
