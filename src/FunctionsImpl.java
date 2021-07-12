@@ -27,5 +27,11 @@ class FunctionsImpl implements Functions{
 		Pattern myPattern = Pattern.compile("^[a-z]{3,}+(\\.[-+_a-z]{3,})*@[a-z]{3,}+(\\.[a-z]{2,4})$");
 		return myPattern.matcher(string).matches();
 	}
+
+	@Override
+	public boolean checkEmailForSecondOptionalPart(String string) {
+		Pattern myPattern = Pattern.compile("^[a-z]{3,}+(\\.[-+_a-z]{3,})*@[a-z]{3,}+(\\.[a-z]{2,4})(\\.[a-z]{2,4})*");
+		return myPattern.matcher(string).matches();
+	}
 	
 }

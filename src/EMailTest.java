@@ -30,4 +30,11 @@ class EMailTest {
 		boolean result = myEmail.checkEmailForFirstOptionalPart("abc.xyz@bridgelabz.com");
 		Assert.assertEquals(true,result);
 	}
+	
+	@Test
+	void givenEmail_MayOrMayNotHave_SecondOptionalPart() {
+		Functions myEmail = new FunctionsImpl();
+		boolean result = myEmail.checkEmailForSecondOptionalPart("abc.xyz@bridgelabz.co.in");
+		Assert.assertEquals(true, result);
+	}
 }

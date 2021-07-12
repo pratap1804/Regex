@@ -9,5 +9,6 @@ public interface Functions {
  
  boolean checkEmailForFirstOptionalPart(String string);
  
+ boolean checkEmailForSecondOptionalPart(String string);
 		
 }
