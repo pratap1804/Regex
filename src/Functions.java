@@ -6,5 +6,8 @@ public interface Functions {
  boolean checkEmailSecondMandaotryPart(String string);
  
  boolean checkEmailThirdMandatoryPart(String string);
+ 
+ boolean checkEmailForFirstOptionalPart(String string);
+ 
 		
 }
