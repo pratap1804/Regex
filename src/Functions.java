@@ -1,6 +1,8 @@
 
 public interface Functions {
 
- void checkEmailFirstMandatoryPart();
+ boolean checkEmailFirstMandatoryPart(String string);
+ 
+ boolean checkEmailSecondMandaotryPart(String string);
 		
 }
