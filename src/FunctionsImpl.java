@@ -12,7 +12,15 @@ class FunctionsImpl implements Functions{
 
 	@Override
 	public boolean checkEmailSecondMandaotryPart(String string) {
-		Pattern myPattern = Pattern.compile("^[a-z]{3}[a-z]{3,10}");
+		Pattern myPattern = Pattern.compile("^[a-z]{3,}@[a-z]{3,}");
 		return myPattern.matcher(string).matches();
 	}
+
+	@Override
+	public boolean checkEmailThirdMandatoryPart(String string) {
+		Pattern myPattern = Pattern.compile("^[a-z]{3,}@[a-z]{3,}+(\\.[a-z]{2,4})$");
+		return myPattern.matcher(string).matches();
+	}
+	
+
 }

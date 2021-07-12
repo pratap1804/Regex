@@ -13,7 +13,14 @@ class EMailTest {
 	@Test
 	void givenEmail_ShouldBeHaving_WordBridgelabz_Init() {
 		Functions myEmail = new FunctionsImpl();
-		boolean result = myEmail.checkEmailSecondMandaotryPart("abcbridgelabz");
+		boolean result = myEmail.checkEmailSecondMandaotryPart("abc@bridgelabz");
 		Assert.assertEquals(true,result);
+	}
+	
+	@Test
+	void givenEmail_ShouldBeHaving_DotCo_AfterBridgelabz() {
+		Functions myEmail = new FunctionsImpl();
+		boolean result = myEmail.checkEmailThirdMandatoryPart("abc@bridgelabz.com");
+		Assert.assertEquals(true, result);
 	}
 }
