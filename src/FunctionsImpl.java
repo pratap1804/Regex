@@ -24,7 +24,7 @@ class FunctionsImpl implements Functions{
 
 	@Override
 	public boolean checkEmailForFirstOptionalPart(String string) {
-		Pattern myPattern = Pattern.compile("^[a-z]{3,}+(\\.[-+_a-z]{3,})*@[a-z]{3,}+(\\.[a-z]{2,4})$");
+		Pattern myPattern = Pattern.compile("^[a-z]{3,}+(\\.[-+_a-z0-9]{3,})*@[a-z0-9]{3,}+(\\.[a-z]{2,4})$");
 		return myPattern.matcher(string).matches();
 	}
 
